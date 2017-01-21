@@ -12,19 +12,22 @@
     <nav class="navbar navbar-default navbar-static-top" role="navigation">
       <div class='container'>
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="main-nav-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="/" class="navbar-brand"><i class="fa fa-group"></i> DevMatch</a>
+          <%= link_to "/", class: "navbar-brand" do %>
+            <i class="fa fa-group"></i>
+            DevMatch
+          <% end %>
         </div>
         <div class="collapse navbar-collapse list-unstyled" id="main-nav-collapse"
           <ul class="nav navbar-nav navbar-right list-unstyled">
           
-          <li class="list-unstyled"> 
-          <a href="/about">About</a>
+          <li class="list-unstyled">
+          <li><%= link_to "About", "/about" %></li>
           </li>
           
         </ul>
